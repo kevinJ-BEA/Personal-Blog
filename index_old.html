@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <script src="app.js" defer></script>
+    <link href="style.css" rel="stylesheet">
+    <title>Welcome Main Page</title>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
+    <script src="my-timelinemax-animation.js"></script>
+  </head>
+  <body>
+    <ul class="tabs" id="navbar">
+      <li data-tab-target="#home" class="active tab">HOME</li>
+      <li data-tab-target="#about" class="tab">ABOUT</li>
+      <li data-tab-target="#projects" class="tab">PROJECTS</li>
+      <li data-tab-target="#papers" class="tab">PAPERS</li>
+    </ul>
+
+    <div class="tab-content">
+      <div id="home" data-tab-content class="active">
+        <video autoplay muted loop id="myVideo" width="100%">
+          <source src="ballons.mp4" type="video/mp4">
+        </video>
+        <div class="content" width="100%">
+          <h1>Home</h1>
+          <p>Welcome to my website</p>
+        </div>
+      </div>
+
+
+      <div id="about" data-tab-content>
+        <body class="body">
+          <img src="portrait.jpg" alt="" width="25%" align="right">
+          <h2 id="level2" style="">About Me</h2>
+          <h5 style="font-size:25px;">I am an economist from Canada</h5>
+          <div>
+            <ul>
+              <li>WHAT I DO: I help senior management achieve data-driven decision making by providing economic research, briefing material, and statistical support. My projects include research on optimal resource allocation, analysis of impacts of Free Trade Agreements, and sector-level studies.</li><br>
+              <li>WHO I WORK WITH: I work with internal clients at Global Affairs Canada, and also partner with external organizations like Statistic Canada and Export Development Canada.</li><br>
+              <li>CONNECT WITH ME: Reach out to me directly here on LinkedIn or email me at <span style="text-decoration:underline">kevin.jiang@international.gc.ca</span>.</li><br>
+            </ul>
+          </div>
+          <a href="Exp restriction sample.html" class="button">Link to full Resume</a>
+        </body>
+
+        <body class="body">
+          <h2 id="level2">Education</h2>
+          <ul>
+            <li>Johns Hopkins University</li><br>
+            <li>University of Toronto</li><br>
+          </ul>
+        </body>
+      </div>
+
+      <div id="projects" data-tab-content>
+        <h1>Projects</h1>
+        <p>Some projects</p>
+      </div>
+
+
+      <div id="papers" data-tab-content>
+        <h1>Papers</h1>
+        <p>Links to some papers</p>
+  </div>
+  </body>
+</html>
